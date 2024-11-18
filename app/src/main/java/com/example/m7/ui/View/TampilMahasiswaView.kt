@@ -34,6 +34,10 @@ fun TampilanMahasiswaView(
             judul = "Email",
             isinya = mhs.email
         )
+        TampilData(
+            judul = "No Handphone",
+            isinya = mhs.nohp
+        )
     }
 }
 
