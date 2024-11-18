@@ -124,9 +124,9 @@ fun FormulirView(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(5.dp),
-            label = { Text("Address") },
+            label = { Text("NIM") },
             placeholder = {
-                Text("Input Your Address!", color = Color.Gray)
+                Text("Masukkan NIM!", color = Color.Gray)
             }
         )
 
