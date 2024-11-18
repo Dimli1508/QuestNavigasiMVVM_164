@@ -31,6 +31,7 @@ fun FormulirView(
     var nomorHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenisK by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
     var listData : MutableList<String> = mutableListOf(nama, jenisK, alamat)
     // Kolom utama untuk seluruh layout
     Column(
@@ -115,6 +116,17 @@ fun FormulirView(
             label = { Text("Alamat") },
             placeholder = {
                 Text("Masukkan Alamat Anda", color = Color.Gray)
+            }
+        )
+        TextField(
+            value = nim,
+            onValueChange = {nim = it},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            label = { Text("Address") },
+            placeholder = {
+                Text("Input Your Address!", color = Color.Gray)
             }
         )
 
