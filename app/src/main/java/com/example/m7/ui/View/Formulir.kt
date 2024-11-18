@@ -32,7 +32,7 @@ fun FormulirView(
     var alamat by remember { mutableStateOf("") }
     var jenisK by remember { mutableStateOf("") }
     var nim by remember { mutableStateOf("") }
-    var listData : MutableList<String> = mutableListOf(nama, jenisK, alamat, email, nomorHp, nim)
+    var listData : MutableList<String> = mutableListOf(nama, jenisK, email, nomorHp, alamat, nim)
     // Kolom utama untuk seluruh layout
     Column(
         modifier = Modifier
